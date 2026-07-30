@@ -1,7 +1,4 @@
-# WibWob Reload ( Video will be uploaded soon )
-**Tutorial if you had an old version of the project**
-[Updating from an older version](#updating-from-an-older-version)
-
+# WibWob Reload
 
 **Documentation: [Français](README.md) | English**
 
@@ -21,7 +18,7 @@ A community-made, experimental local server for **Yo-kai Watch Wibble Wobble**.
 | `ADMIN_CLIENT/WibWobAdmin.exe` | Manages local accounts and the database. |
 | `CUSTOM_APK_BUILDER/WibWobApkBuilder.exe` | Builds an APK configured for the local server. |
 | `WWR_BACKUP/` | PostgreSQL backup and resources required by the server. |
-| `appsettings.Development.json` | Configuration template without real credentials. |
+| `appsettings.example.json` | Configuration template without real credentials. |
 
 ## New installation
 
@@ -29,7 +26,6 @@ A community-made, experimental local server for **Yo-kai Watch Wibble Wobble**.
 
 Install the following software on Windows:
 
-- [WibWobPadaBoom](https://mega.nz/file/rtY3kTJD#nksXNAaiLicizXbpOXbwk2wGUEsVD5STt1cur8YEbIw) the main project unzip it;
 - [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet/8.0) for the server ;
 - [PostgreSQL](https://www.postgresql.org/download/) 18 for account and saves ;
 - [Apktool](./JavaTools.zip) ; 
@@ -121,6 +117,8 @@ See [TEST_APK_LOCAL.en.md](TEST_APK_LOCAL.en.md) for the detailed guide.
 7. Start `LANCER_WIBWOB.bat`.
 8. Rebuild the APK only if the server IP changed or the previous APK no longer connects.
 
+The old `WibWobAdmin.exe` and `WibWobApkBuilder.exe` files are no longer used. Run only the executables ending in ``.
+
 ## Administration
 
 Run `ADMIN_CLIENT/WibWobAdmin.exe`. Stop the server before directly modifying the database because the server cache can overwrite external changes.
@@ -136,8 +134,9 @@ The Admin Client creates backups before sensitive operations. Never publish acco
 
 ## Documentation
 
+- [Server and PostgreSQL installation](DEMARRAGE_WIBWOB.en.md)
 - [APK building and installation](TEST_APK_LOCAL.en.md)
-- [Admin Client guide](ADMINCLIENT.en.md)
+- [Admin Client guide](ADMIN_CLIENT/README.en.md)
 
 ## Credits
 

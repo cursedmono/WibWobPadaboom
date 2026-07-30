@@ -1,8 +1,4 @@
-# WibWob Reload ( Une video serra uploaded sous peu )
-
-**Mise a jour si vous avez une ancienne version du projet**
-[Mise a jour](#Mise-à-jour-depuis-une-ancienne-version)
-
+# WibWob Reload
 
 **Documentation : Français | [English](README.en.md)**
 
@@ -22,7 +18,7 @@ Serveur local communautaire et expérimental pour **Yo-kai Watch Wibble Wobble**
 | `ADMIN_CLIENT/WibWobAdmin.exe` | Administre les comptes et la base locale. |
 | `CUSTOM_APK_BUILDER/WibWobApkBuilder.exe` | Construit une APK pointant vers le serveur local. |
 | `WWR_BACKUP/` | Sauvegarde PostgreSQL et ressources nécessaires au serveur. |
-| `appsettings.Development.json` | Modèle de configuration sans mot de passe réel. |
+| `appsettings.example.json` | Modèle de configuration sans mot de passe réel. |
 
 ## Nouvelle installation — tutoriel complet
 
@@ -30,7 +26,6 @@ Serveur local communautaire et expérimental pour **Yo-kai Watch Wibble Wobble**
 
 Installez les logiciels suivants sur Windows :
 
-- [WibWobPadaBoom](https://mega.nz/file/rtY3kTJD#nksXNAaiLicizXbpOXbwk2wGUEsVD5STt1cur8YEbIw) le projet principal dezipper le;
 - [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet/8.0) pour le serveur ;
 - [PostgreSQL](https://www.postgresql.org/download/) 18 pour les comptes et sauvegardes ;
 - [Apktool](./JavaTools.zip) ; 
@@ -53,13 +48,14 @@ Si vous utilisez une autre version de PostgreSQL, adaptez le numéro `18` dans l
 ### 2. Configurer le serveur
 
 1. Décompressez le projet dans un dossier dont vous avez les droits d’écriture.
-2. Ouvrez en `appsettings.Development.json`.
-3. Exécutez `ipconfig` et notez l’adresse IPv4 du PC, par exemple `192.168.1.100`.
-4. Ouvrez `appsettings.Development.json` et renseignez :
+2. Copiez `appsettings.example.json`.
+3. Renommez la copie en `appsettings.Development.json`.
+4. Exécutez `ipconfig` et notez l’adresse IPv4 du PC, par exemple `192.168.1.100`.
+5. Ouvrez `appsettings.Development.json` et renseignez :
 
    ```json
    {
-     "PostgresConnectionString": "Host=127.0.0.1;Port=5432;Database=wibwob;Username=postgres;Password=PASSWORD",
+     "PostgresConnectionString": "Host=127.0.0.1;Port=5432;Database=wibwob;Username=postgres;Password=VOTRE_MOT_DE_PASSE",
      "PublicServerURL": "http://192.168.1.100:5000"
    }
    ```
@@ -109,7 +105,8 @@ Le guide détaillé est disponible dans [TEST_APK_LOCAL.md](TEST_APK_LOCAL.md).
    - `appsettings.Development.json` ;
    - votre base PostgreSQL `wibwob` ;
    - `ADMIN_CLIENT/backups/` si ce dossier existe ;
-3. Dezipper le nouveau **WibWobPadaBoom** a l'endroit de l'ancien.
+   - votre clé `CUSTOM_APK_BUILDER/wibwob-custom-test.keystore`.
+3. Copiez le contenu du paquet de mise à jour dans l’ancien dossier du projet et acceptez le remplacement des fichiers.
 4. Conservez votre ancien `appsettings.Development.json` : ne le remplacez pas par le fichier d’exemple.
 5. Conservez votre base PostgreSQL existante : ne relancez ni `createdb` ni l’import SQL.
 6. Vérifiez que ces fichiers sont présents :
@@ -119,6 +116,8 @@ Le guide détaillé est disponible dans [TEST_APK_LOCAL.md](TEST_APK_LOCAL.md).
    - `CUSTOM_APK_BUILDER/lang/en.lang`.
 7. Relancez `LANCER_WIBWOB.bat`.
 8. Reconstruisez votre APK seulement si l’adresse IP du serveur a changé ou si votre ancienne APK ne se connecte plus.
+
+Les anciens exécutables `WibWobAdmin.exe` et `WibWobApkBuilder.exe` ne sont plus utilisés. Lancez uniquement les versions portant le suffixe ``.
 
 ## Administration
 
@@ -135,8 +134,9 @@ Le client admin crée une sauvegarde avant les écritures sensibles. Ne publiez 
 
 ## Documentation
 
+- [Installation du serveur et de PostgreSQL](DEMARRAGE_WIBWOB.md)
 - [Construction et installation de l’APK](TEST_APK_LOCAL.md)
-- [Utilisation du client administrateur](ADMINCLIENT.md)
+- [Utilisation du client administrateur](ADMIN_CLIENT/README.md)
 
 ## Crédits
 

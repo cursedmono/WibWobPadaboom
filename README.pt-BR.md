@@ -1,6 +1,6 @@
 # WibWob Reload
 
-**Documentação : Português do Brasil [Français](README.md) | [English](README.en.md)**
+**Documentação : Português do Brasil | [Français](README.md) | [English](README.en.md)**
 
 Servidor local e experimental para a comunidade para **Yo-kai Watch Wibble Wobble**.
 

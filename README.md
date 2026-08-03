@@ -28,7 +28,7 @@ Installez les logiciels suivants sur Windows :
 
 - [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet/8.0) pour le serveur ;
 - [PostgreSQL](https://www.postgresql.org/download/) 18 pour les comptes et sauvegardes ;
-- [Apktool](./JavaTools.zip) ; 
+- [Apktool](./JavaTools.zip);
 - [Java JDK 21](https://www.oracle.com/fr/java/technologies/downloads/#jdk21-windows);
 - Android SDK Build-Tools pour construire l’APK.
 

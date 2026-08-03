@@ -1,6 +1,6 @@
 # Client administrateur WibWob Reload
 
-**Documentation : Français | [English](README.en.md)**
+**Documentation : Français | [English](README.en.md) | [Português do Brasil](README.pt-BR.md)**
 
 Le client admin permet de gérer les comptes du serveur PostgreSQL local.
 

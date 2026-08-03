@@ -1,6 +1,6 @@
 # WibWob Reload Admin Client
 
-**Documentation: [Français](README.md) | English**
+**Documentation: English [Français](README.md) | [Português do Brasil](README.pt-BR.md)**
 
 The Admin Client manages accounts stored in the local PostgreSQL server.
 

@@ -98,7 +98,7 @@ O guia detalhado está disponível em [TEST_APK_LOCAL.pt-BR.md](TEST_APK_LOCAL.p
 
 ## Atualizando de uma versão anterior
 
-> [!IMPORTANTE]
+> [!IMPORTANT]
 > Não reimporte o arquivo `backup_nomail.sql` se o seu banco de dados `wibwbob` já tiver suas contas.
 
 1. Desligue completamente o servidor usando `Ctrl+C`.

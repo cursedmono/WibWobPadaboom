@@ -1,6 +1,6 @@
 # Construire et installer l’APK locale
 
-**Documentation : Français | [English](TEST_APK_LOCAL.en.md)**
+**Documentation : Français | [English](TEST_APK_LOCAL.en.md) | [Português do Brasil](TEST_APK_LOCAL.pt-BR.md)**
 
 > [!WARNING]
 > **Le jeu reste en anglais.** Le choix Français/English du constructeur concerne uniquement son interface et ses journaux.

@@ -1,6 +1,6 @@
 # Building and installing the local APK
 
-**Documentation: [Français](TEST_APK_LOCAL.md) | English**
+**Documentation: English | [Français](TEST_APK_LOCAL.md) | [Português do Brasil](TEST_APK_LOCAL.pt-BR.md)**
 
 > [!WARNING]
 > **The game remains in English.** The Français/English choice affects only the Builder interface and logs.
